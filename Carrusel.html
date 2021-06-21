@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>carrusel de imagenes</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximun-scale=1,minimum-scale=1" >
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.slide{
+			width: 28%;
+			margin: auto;
+			background: lime;
+			overflow: hidden;
+			
+		}
+		.slide ul{
+			display: flex;
+			width: 428%;
+			padding: 0;
+
+			animation: imagen 15s infinite;
+			animation-direction: alternate;
+			
+			
+		}
+		.slide ul li{
+			list-style: none;
+			width: 100%;
+		}
+		.slide ul li img{
+			width: 110%;
+		}
+		@keyframes imagen {
+			0%{margin-left: 0;}
+			20%{margin-left: 0;}
+
+			25%{margin-left: -110%;}
+			45%{margin-left: -110%;}
+
+			50%{margin-left: -220%;}
+			70%{margin-left: -220%;}
+
+			75%{margin-left: -330%;}
+			100%{margin-left:-330%;}
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="slide">
+		<ul>
+			<li><img src="img/espadas.jpg"></li>
+			<li><img src="img/piramides.jpg"></li>
+			<li><img src="img/flor2.jpg"></li>
+			<li><img src="img/alaska.jpg"></li>
+		</ul>
+	</div>
+
+</body>
+</html>
